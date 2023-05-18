@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,6 +28,7 @@ a:hover {
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -74,4 +78,20 @@ button:focus-visible {
   max-width: 80%;
   height: auto;
   margin-top: 30px;
+}
+
+.Experiences {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Experiences > h1 {
+  letter-spacing: -0.05em;
+}
+
+@media (min-width: 820px) {
+  .HeroGridIMG {
+    max-width: 40%;
+  }
 }
