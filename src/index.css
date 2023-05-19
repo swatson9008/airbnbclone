@@ -96,6 +96,7 @@ button:focus-visible {
   text-align: left;
   margin-left: 30px;
   font-size: 14px;
+  margin-bottom: 15px;
 }
 
 .CardImage img {
