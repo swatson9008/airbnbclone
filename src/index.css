@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 
 :root {
@@ -91,8 +91,37 @@ button:focus-visible {
   margin-bottom: 20px;
 }
 
+.Card {
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.CardImage img {
+  max-width: 30%;
+  border-radius: 10px;
+}
+
+.star {
+  max-width: 15px;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.country {
+  color: rgb(131, 131, 131);
+}
+
+.rate {
+  font-weight: bolder;
+}
+
 @media (min-width: 820px) {
   .HeroGridIMG {
     max-width: 40%;
   }
+  .CardImage img {
+  max-width: 200px;
+}
 }
