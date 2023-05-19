@@ -99,8 +99,12 @@ button:focus-visible {
 }
 
 .CardImage img {
-  max-width: 30%;
+  max-width: 40%;
   border-radius: 10px;
+}
+
+.bio {
+  max-width: 40%
 }
 
 .star {
@@ -122,6 +126,9 @@ button:focus-visible {
     max-width: 40%;
   }
   .CardImage img {
-  max-width: 200px;
+  max-width: 250px;
+}
+.bio {
+  max-width: 250px;
 }
 }
