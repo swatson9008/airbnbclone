@@ -1,18 +1,19 @@
+/* eslint-disable react/prop-types */
 import profilePic from '../assets/katie-zaferes.png';
 import starPic from '../assets/star.png';
 
-export default function Card(){
+export default function Card(props){
     return (
         <div className='Card'>
             <div className='CardImage'>
-                <img src={profilePic} alt="profile picture"/>
+                <img src={props.img} alt="profile picture"/>
             </div>
             <div className='bio'>
                 <img src={starPic} alt="star" className='star'/>
-                <span className='rating'>5.0</span>
-                <span className='country'>(6) - USA</span><br />
-                <span className='blurb'>Life lessons with Katie Zaferes</span><br />
-                <span className='rate'>From $136</span><span className='perPerson'> / person</span>
+                <span className='rating'>{props.rating}</span>
+                <span className='country'>({props.reviewCount}) - {props.country}</span><br />
+                <span className='blurb'>{props.title}</span><br />
+                <span className='rate'>From ${props.price}</span><span className='perPerson'> / person</span>
             </div>
         </div>
     )

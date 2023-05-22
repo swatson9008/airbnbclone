@@ -5,6 +5,7 @@ import './App.css'
 import NavBar from './components/navBar'
 import Hero from './components/hero'
 import Card from './components/card'
+import katie from './assets/katie-zaferes.png'
 
 /*function App() {
   const [count, setCount] = useState(0)
@@ -40,7 +41,14 @@ function App(){
     <div>
       <NavBar />
       <Hero />
-      <Card />
+      <Card 
+      img={katie}
+      rating={5.0}
+      reviewCount={6}
+      country="USA"
+      title="Life Lessons with Katie Zaferes"
+      price="136"
+      />
     </div>
   )
 }
