@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable no-undef */
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -5,7 +7,8 @@ import './App.css'
 import NavBar from './components/navBar'
 import Hero from './components/hero'
 import Card from './components/card'
-import katie from './assets/katie-zaferes.png'
+import data from '../data'
+
 
 /*function App() {
   const [count, setCount] = useState(0)
@@ -37,18 +40,21 @@ import katie from './assets/katie-zaferes.png'
 }*/
 
 function App(){
+  const cardData = data.map(hero => {
+    return <Card img={hero.coverImg}
+     rating={hero.stats.rating}
+     reviewCount={hero.stats.reviewCount}
+     country={hero.location}
+     title={hero.title}
+     price={hero.price}
+    />
+  })
   return(
     <div>
       <NavBar />
       <Hero />
-      <Card 
-        img={katie}
-        rating="5.0"
-        reviewCount={6}
-        country="USA"
-        title="Life Lessons with Katie Zaferes"
-        price="136"
-      />
+      <div className='cardList'>
+      {cardData}</div>
     </div>
   )
 }

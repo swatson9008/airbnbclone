@@ -97,15 +97,18 @@ button:focus-visible {
   margin-left: 30px;
   font-size: 14px;
   margin-bottom: 15px;
+  align-items: center;
 }
 
 .CardImage img {
-  max-width: 40%;
+  width: 80%;
+  max-height: auto;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .bio {
-  max-width: 40%
+  max-width: 80%
 }
 
 .star {
@@ -122,14 +125,24 @@ button:focus-visible {
   font-weight: bolder;
 }
 
-@media (min-width: 820px) {
+.cardList{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+@media (min-width: 850px) {
   .HeroGridIMG {
-    max-width: 40%;
+    max-width: 50%;
   }
+  .cardList {
+    display: flex;
+  }
+
   .CardImage img {
   max-width: 250px;
 }
-.bio {
-  max-width: 250px;
+.Card {
+  width: 250px;
 }
 }

@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import profilePic from '../assets/katie-zaferes.png';
 import starPic from '../assets/star.png';
 
 export default function Card(props){
