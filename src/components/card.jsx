@@ -4,6 +4,7 @@ import starPic from '../assets/star.png';
 export default function Card(props){
     return (
         <div className='Card'>
+            {props.openSpots === 0 && <div className='cardBadge'>Sold Out</div>}
             <div className='CardImage'>
                 <img src={props.img} alt="profile picture"/>
             </div>

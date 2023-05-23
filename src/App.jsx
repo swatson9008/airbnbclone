@@ -47,6 +47,7 @@ function App(){
      country={hero.location}
      title={hero.title}
      price={hero.price}
+     openSpots={hero.openSpots}
     />
   })
   return(
