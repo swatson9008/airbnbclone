@@ -3,9 +3,9 @@ import starPic from '../assets/star.png';
 
 export default function Card(props){
     let badgeText;
-    if (props.openSpots === 0) {
+    if (props.hero.openSpots === 0) {
         badgeText = "SOLD OUT"
-    } else if (props.country === "Online") {
+    } else if (props.hero.location === "Online") {
         badgeText = "ONLINE"
     }
     return (
