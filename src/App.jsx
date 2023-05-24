@@ -41,13 +41,8 @@ import data from '../data'
 
 function App(){
   const cardData = data.map(hero => {
-    return <Card img={hero.coverImg}
-     rating={hero.stats.rating}
-     reviewCount={hero.stats.reviewCount}
-     country={hero.location}
-     title={hero.title}
-     price={hero.price}
-     openSpots={hero.openSpots}
+    return <Card 
+    hero={hero}
     />
   })
   return(
