@@ -2,9 +2,15 @@
 import starPic from '../assets/star.png';
 
 export default function Card(props){
+    let badgeText;
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.country === "Online") {
+        badgeText = "ONLINE"
+    }
     return (
         <div className='Card'>
-            {props.openSpots === 0 && <div className='cardBadge'>Sold Out</div>}
+            {badgeText && <div className='cardBadge'>{badgeText}</div>}
             <div className='CardImage'>
                 <img src={props.img} alt="profile picture"/>
             </div>
